@@ -4,6 +4,7 @@ import { getBarbecues } from "../redux/actions/barbecueActions";
 import BarbecueListItem from "./BarbecueListItem";
 
 class BarbecueIndex extends React.Component {
+    //class method to take advantage of asynchronous, componentDidMount
   componentDidMount() {
     this.props.getBarbecues();
   }

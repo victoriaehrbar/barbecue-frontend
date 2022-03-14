@@ -3,7 +3,7 @@ export const getBarbecues = () => {
     return (dispatch) => {
       fetch(`http://localhost:3001/barbecues`)
         .then((res) => res.json())
-        .then((bbqs) =>
+        .then((barbecues) =>
           dispatch({ type: "FETCH_BARBECUES_SUCCESS", payload: barbecues })
         );
     };
